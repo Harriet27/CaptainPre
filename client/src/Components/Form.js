@@ -90,7 +90,7 @@ const styles = {
         justifyContent: 'center',
         fontSize: '5em',
         fontWeight: '750',
-        color: '#337CCD',
+        color: '#F8F8FF',
     },
     form: {
         display: 'flex',
