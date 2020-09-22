@@ -14,7 +14,7 @@ import research from './research.svg';
 // PAYMENT
 import paymentOptions from './payment-options.jpg';
 import paypal from './paypal.png';
-import amazon from './amazon.png';
+import amazon from './amazon.jpg';
 import bitcoin from './bitcoin.png';
 import visa from './visa.png';
 // REVIEWS
