@@ -12,7 +12,7 @@ export const addUser = (form) => {
             type: USER_START,
         });
         try {
-            let response = await Axios.post(`${API_URL}/users/register`, form);
+            let response = await Axios.post(`${API_URL}/users/signup`, form);
             dispatch({
                 type: USER_SUCCESS,
                 payload: response.data.data,

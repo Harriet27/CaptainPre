@@ -16,8 +16,9 @@ module.exports = {
             });
         });
     },
-    register: (req,res) => {
-        let { firstname, lastname, username, email, password } = req.body;
+    truncate: (req,res) => {},
+    signup: (req,res) => {
+        let { firstname, lastname, email } = req.body;
         let sql = `INSERT INTO users (firstname, lastname, email) VALUES ('${firstname}', '${lastname}', '${email}')`;
         db.query(sql, (err,insert) => {
             if (err) {
@@ -42,45 +43,6 @@ module.exports = {
                     });
                 });
             }
-        });
-    },
-    login: (req,res) => {
-        let { username, password } = req.body;
-        let sql = `SELECT * FROM users WHERE username = '${username}' AND password = '${encrypt(password)}'`;
-        db.query(sql, (err,results) => {
-            if (err) {
-                res.status(500).send(err.message);
-            }
-            if (results.length !== 0) {
-                let token = createJWTToken({...results[0]});
-                res.status(200).send({
-                    status: 'Success!',
-                    data: {
-                        ...results[0],
-                        token,
-                    },
-                    message: 'Log In Successful'
-                });
-            } else {
-                res.status(404).send({
-                    status: 'Not Found!',
-                    message: 'User Not Found',
-                });
-            }
-        });
-    },
-    keepLogin: async (req,res) => {
-        let { id } = req.user;
-        let sql = `SELECT * FROM users WHERE id = ${id}`;
-        let response = await query(sql);
-        let token = createJWTToken({...response[0]});
-        res.status(200).send({
-            status : 'Success!',
-            data : {
-                ...response[0],
-                token,
-            },
-            message : 'Authorized',
         });
     },
 };

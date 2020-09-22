@@ -28,6 +28,8 @@ const FormTest = () => {
         });
     };
 
+    console.log(input);
+
     const handleSaveUser = () => {
         if (!input.firstname || !input.lastname || !input.email) {
             Swal.fire({
@@ -58,13 +60,13 @@ const FormTest = () => {
                         </div>
                         <div>
                             <div style={styles.input}>
-                                <TextField type='text' label='First Name' variant='outlined' style={styles.textField} onChange={handleChange} />
+                                <TextField type='text' label='First Name' name='firstname' variant='outlined' style={styles.textField} onChange={handleChange} />
                             </div>
                             <div style={styles.input}>
-                                <TextField type='text' label='Last Name' variant='outlined' style={styles.textField} onChange={handleChange} />
+                                <TextField type='text' label='Last Name' name='lastname' variant='outlined' style={styles.textField} onChange={handleChange} />
                             </div>
                             <div style={styles.input}>
-                                <TextField type='text' label='Email Address' variant='outlined' style={styles.textField} onChange={handleChange} />
+                                <TextField type='text' label='Email Address' name='email' variant='outlined' style={styles.textField} onChange={handleChange} />
                             </div>
                             <div style={styles.button}>
                                 <Button color='primary' onClick={handleSaveUser}>
