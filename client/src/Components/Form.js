@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, Input } from 'reactstrap';
+import { Button } from 'reactstrap';
 import { addUser, getUser } from '../Redux/Actions/authAction';
 import { formBG } from '../Assets';
+import TextField from '@material-ui/core/TextField';
 import Swal from 'sweetalert2';
 
 const FormTest = () => {
@@ -57,17 +58,23 @@ const FormTest = () => {
                         </div>
                         <div>
                             <div style={styles.input}>
-                                <Input type='text' name='firstname' placeholder='First Name' onChange={handleChange} />
+                                <TextField type='text' label='First Name' variant='outlined' style={styles.textField} onChange={handleChange} />
                             </div>
                             <div style={styles.input}>
-                                <Input type='text' name='lastname' placeholder='Last Name' onChange={handleChange} />
+                                <TextField type='text' label='Last Name' variant='outlined' style={styles.textField} onChange={handleChange} />
                             </div>
                             <div style={styles.input}>
-                                <Input type='text' name='email' placeholder='Email Address' onChange={handleChange} />
+                                <TextField type='text' label='Email Address' variant='outlined' style={styles.textField} onChange={handleChange} />
                             </div>
                             <div style={styles.button}>
-                                <Button outline color='primary' onClick={handleSaveUser}>
-                                    {loading ? 'Loading...' : 'Get Started!'}
+                                <Button color='primary' onClick={handleSaveUser}>
+                                    {
+                                        loading
+                                        ?
+                                        'Loading...'
+                                        :
+                                        'Get Started!'
+                                    }
                                 </Button>
                             </div>
                         </div>
@@ -119,7 +126,13 @@ const styles = {
     input: {
         margin: '1.2rem',
     },
+    textField: {
+        padding: '0rem',
+        width: '100%',
+        height: '3rem',
+    },
     button: {
+        marginTop: '2rem',
         display: 'flex',
         justifyContent: 'center',
         width: '100%',
