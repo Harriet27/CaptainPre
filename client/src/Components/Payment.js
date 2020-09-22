@@ -1,5 +1,10 @@
 import React from 'react';
-import { paymentOptions } from '../Assets';
+import {
+    paypal,
+    amazon,
+    bitcoin,
+    visa,
+} from '../Assets';
 
 const Payment = () => {
     return (
@@ -10,8 +15,13 @@ const Payment = () => {
             <div style={styles.caption}>
                 Cash out in a payment option of your choice.
             </div>
-            <div style={styles.image}>
-                <img src={paymentOptions} alt='payment' height={400} />
+            <div style={styles.image1}>
+                <img src={paypal} alt='payment' style={styles.paypal} />
+            </div>
+            <div style={styles.image2}>
+                <img src={amazon} alt='payment' style={styles.amazon} />
+                <img src={bitcoin} alt='payment' style={styles.bitcoin} />
+                <img src={visa} alt='payment' style={styles.visa} />
             </div>
         </div>
     );
@@ -33,9 +43,29 @@ const styles = {
         justifyContent: 'center',
         fontSize: '1.7rem',
     },
-    image: {
+    image1: {
         display: 'flex',
         justifyContent: 'center',
+    },
+    image2: {
+        display: 'flex',
+        justifyContent: 'center',
+    },
+    paypal: {
+        margin: '2rem 1rem',
+        height: 120
+    },
+    amazon: {
+        margin: '2rem 1rem',
+        height: 120
+    },
+    bitcoin: {
+        margin: '2rem 1rem',
+        height: 120
+    },
+    visa: {
+        margin: '2rem 1rem',
+        height: 120
     },
 };
 

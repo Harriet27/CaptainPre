@@ -1,0 +1,64 @@
+[debug] [2020-09-22T05:50:54.875Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T05:50:54.879Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\NEIL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-22T05:50:54.879Z] CLI Version:   8.5.0
+[debug] [2020-09-22T05:50:54.880Z] Platform:      win32
+[debug] [2020-09-22T05:50:54.880Z] Node Version:  v12.16.1
+[debug] [2020-09-22T05:50:54.882Z] Time:          Tue Sep 22 2020 12:50:54 GMT+0700 (Western Indonesia Time)
+[debug] [2020-09-22T05:50:54.882Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T05:50:54.882Z] 
+[debug] [2020-09-22T05:50:55.046Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-22T05:50:55.047Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\NEIL\Documents\Captain-Pre\client
+
+[debug] [2020-09-22T05:53:19.397Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T05:53:19.403Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\NEIL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-22T05:53:19.404Z] CLI Version:   8.5.0
+[debug] [2020-09-22T05:53:19.404Z] Platform:      win32
+[debug] [2020-09-22T05:53:19.404Z] Node Version:  v12.16.1
+[debug] [2020-09-22T05:53:19.407Z] Time:          Tue Sep 22 2020 12:53:19 GMT+0700 (Western Indonesia Time)
+[debug] [2020-09-22T05:53:19.408Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T05:53:19.408Z] 
+[debug] [2020-09-22T05:53:19.488Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-22T05:53:19.489Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\NEIL\Documents\Captain-Pre\client
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-09-22T05:53:43.269Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-22T05:53:43.270Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-22T05:53:43.506Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 05:53:45 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-22T05:53:43.914Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-09-22T05:53:44.593Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 05:53:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project captainpre-c75cb (CaptainPre) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

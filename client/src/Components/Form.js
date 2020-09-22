@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button, Input } from 'reactstrap';
 import { addUser, getUser } from '../Redux/Actions/authAction';
+import { formBG } from '../Assets';
 import Swal from 'sweetalert2';
 
 const FormTest = () => {
@@ -79,7 +80,8 @@ const FormTest = () => {
 
 const styles = {
     container: {
-        background: '#F3EBEB',
+        backgroundImage: `url(${formBG})`,
+        backgroundSize: 'cover',
         justifyContent: 'center',
     },
     title: {
@@ -98,6 +100,7 @@ const styles = {
     formContainer: {
         width: '30vw',
         backgroundColor: 'white',
+        opacity: '1',
         borderRadius: '20px',
         margin: '4rem',
         marginTop: '0px',
