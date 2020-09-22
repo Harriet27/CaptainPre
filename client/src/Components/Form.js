@@ -60,13 +60,34 @@ const FormTest = () => {
                         </div>
                         <div>
                             <div style={styles.input}>
-                                <TextField type='text' label='First Name' name='firstname' variant='outlined' style={styles.textField} onChange={handleChange} />
+                                <TextField 
+                                    type='text'
+                                    label='First Name'
+                                    name='firstname'
+                                    variant='outlined'
+                                    onChange={handleChange}
+                                    style={styles.textField}
+                                />
                             </div>
                             <div style={styles.input}>
-                                <TextField type='text' label='Last Name' name='lastname' variant='outlined' style={styles.textField} onChange={handleChange} />
+                                <TextField
+                                    type='text'
+                                    label='Last Name'
+                                    name='lastname'
+                                    variant='outlined'
+                                    onChange={handleChange}
+                                    style={styles.textField}
+                                />
                             </div>
                             <div style={styles.input}>
-                                <TextField type='text' label='Email Address' name='email' variant='outlined' style={styles.textField} onChange={handleChange} />
+                                <TextField
+                                    type='text'
+                                    label='Email Address'
+                                    name='email'
+                                    variant='outlined'
+                                    onChange={handleChange}
+                                    style={styles.textField}
+                                />
                             </div>
                             <div style={styles.button}>
                                 <Button color='primary' onClick={handleSaveUser}>
