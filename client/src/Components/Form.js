@@ -28,8 +28,6 @@ const FormTest = () => {
         });
     };
 
-    console.log(input);
-
     const handleSaveUser = () => {
         if (!input.firstname || !input.lastname || !input.email) {
             Swal.fire({
@@ -41,7 +39,7 @@ const FormTest = () => {
             Swal.fire(
                 'Success!',
                 'Your data has been saved.',
-                'success'
+                'success',
             );
             dispatch(addUser(input));
         }
