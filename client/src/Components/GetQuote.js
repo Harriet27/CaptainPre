@@ -17,7 +17,7 @@ const GetQuote = () => {
                     Don't Wait - Get Free and Faster Options within minutes.
                 </div>
                 <div style={styles.button}>
-                    <input type='button' value='GET A QUOTE' style={styles.inputButton} onClick={handleScroll} />
+                    <input type='button' value='GET A QUOTE' onClick={handleScroll} style={styles.inputButton} />
                 </div>
             </div>
         </div>

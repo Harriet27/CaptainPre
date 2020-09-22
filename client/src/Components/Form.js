@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button } from 'reactstrap';
+import { Button, Spinner } from 'react-bootstrap';
 import { addUser, getUser } from '../Redux/Actions/authAction';
 import { formBG } from '../Assets';
 import TextField from '@material-ui/core/TextField';
@@ -88,15 +88,15 @@ const FormTest = () => {
                                 />
                             </div>
                             <div style={styles.button}>
-                                <Button color='primary' onClick={handleSaveUser}>
-                                    {
-                                        loading
-                                        ?
-                                        'Loading...'
-                                        :
-                                        'Get Started!'
-                                    }
-                                </Button>
+                                {
+                                    loading
+                                    ?
+                                    <Spinner animation="border" variant="dark" />
+                                    :
+                                    <Button variant='primary' onClick={handleSaveUser} style={styles.inputButton}>
+                                        GET STARTED!
+                                    </Button>
+                                }
                             </div>
                         </div>
                     </div>
@@ -157,6 +157,11 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         width: '100%',
+    },
+    inputButton: {
+        fontWeight: '500',
+        borderRadius: '50px',
+        padding: '0.7rem 2rem',
     },
 };
 
